@@ -1,0 +1,114 @@
+/*
+1. remover estilos predeterminados que vienen en el navegador 
+recordadr que los elementos bloque abarca al 100% de contenedor y da un salto de linea
+Los elementos de linea no generan salyos , no se puede utilizar el with(ancho) y heigth(largo)
+y cuando se colocan propiedades invaden los elementos en bloque , para esto utilizamos la propiedad display
+
+2. El toma encuenta el padding y margin y expande la caja
+   es decir se suma
+
+*/
+
+* {
+   margin:0;
+   padding:0;
+}
+
+.content{
+    margin:10px;
+    padding:20px;
+    border:2px solid rgb(0, 0, 0);
+    background-color: rgb(156, 28, 173);
+}
+
+.box1{
+    margin: 0 auto;/*el margin solo funciona cuando hay width*/
+    width:400px;
+    height:auto;
+    padding: 5px;
+    background-color: rgb(197, 54, 142);
+    border: 2px solid rgb(8, 8, 8);
+    box-sizing: border-box;/*acomoda el tamaño de la caja segun el ancho y el alto establecido*/
+}
+
+.box2{
+    margin: 0 auto;/*el margin solo funciona cuando hay width*/
+    background-color: azure;
+    width:400px;
+    height: 200px;
+    padding:40px;
+   
+     
+}
+
+.box3{
+    margin: 0 auto;/*el margin solo funciona cuando hay width*/
+    background-color: aquamarine;
+    width:400px;
+    height: 200px;
+    padding:40px;
+    
+     
+}
+.footer{
+    padding:5px;
+    margin:  auto;
+    width:400px;
+    height: 300px;
+
+
+}
+
+.enlaceFooter{/* el valor block tratara como elementos de blocke a los elementos de linea
+    y los coloca uno al lado del otro sin evadir*/
+    display: inline-block;/* cuando se colocan propiedades invaden los elementos en bloque , para esto utilizamos la propiedad display*/
+    margin:0 auto;
+    padding:20px;
+    background-color: rgb(34, 180, 185);
+    border: 2px solid rgb(15, 15, 14);
+     text-align: center;
+}
+
+/*haciendo cascada*/
+
+.box3{
+    margin: 0 auto;/*el margin solo funciona cuando hay width*/
+    background-color: cadetblue;
+    color: darkgrey;
+    width:400px;
+    height: 200px;
+    padding:40px;
+     border: 2xp double blue;
+}
+
+/*especificidad  los selctores tienen jerarquia /es un valor */
+h1{
+color: blue;
+
+}
+#h1{
+    color: rgb(116, 226, 43);
+}
+
+.h1{
+    color: rgb(14, 187, 106);
+}
+
+/*herencia es cuando heredamos algo del padre propiedades , no todas se heredan*/
+
+.section{
+
+background-color: chartreuse;
+font-style: oblique;
+border-radius: 2%;
+padding: 13px;
+text-align: center;
+
+
+}
+h2{
+
+
+
+}
+

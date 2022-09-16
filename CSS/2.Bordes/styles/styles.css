@@ -1,0 +1,82 @@
+ 
+ *{
+margin:0;
+padding:0;
+
+ }
+  
+ .box{
+
+    margin: 0 auto;/*el margin solo funciona cuando hay width*/
+    background-color: rgb(158, 109, 92);
+    width:400px;
+    height:auto;
+    padding: 20px;/*relleno*/
+    text-align: justify;
+    box-sizing: border-box;
+
+    /*los bordes trabajan con 3 propiedades o atributos
+     double =doble linea
+      solid  =linea
+      dotted =puntillos 
+      dashed= lineas continuas  
+      groove= linea      
+      hidden =esconde  
+      border width = tamaño de la linea
+      */
+
+    border-color: rgb(81, 65, 185);
+    border-style: ridge;
+    border-width:5px ;
+   /* vertical-horizontal  ridge horizontal dotted vertical    */
+   border-style: ridge dotted;
+   /* top horizontal bottom*/
+   border-style: hidden double inset;
+   /*simplificar*/
+   border: 10px solid rgb(36, 79, 158);
+   border: radius 8%  2%; /*suaviza el borde*/
+   box-shadow:20px 10px 5px rgb(66, 35, 207);/*sombras 1 x y segundo (y) y luego color*/
+   margin-top: 5%;
+
+ }
+
+ .card{
+background-color: cyan;
+width: 300px;
+height: auto;
+color: darkslategray;
+padding: 25px;
+box-sizing: border-box;
+margin: 5px auto;
+text-align: center;
+box-shadow:0 0 20px 0  cornsilk;
+
+
+ }
+
+ .cat{
+ display: block;
+ width: 180 px;
+ height:180 px ;
+ margin: 15px auto;
+ padding-top: 10px;
+ border-radius: 50%;
+ object-fit: cover;/* indica el contenido reemplazado se menciona para tener la relacion */
+
+ }
+ .text{
+
+  font-size: small;
+  font-style: oblique;
+
+ }
+
+ .title{
+color: azure;
+text-align: center;
+margin-top: 5px;
+background-color: blanchedalmond;
+margin:2% 35% 0 35%;
+box-shadow: 0 0 10 px 0 cornsilk;
+padding: 2px;
+ }
